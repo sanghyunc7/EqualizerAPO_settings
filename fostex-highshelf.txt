@@ -1,0 +1,1 @@
+Filter: ON HS Fc 4000 Hz Gain 2 dB

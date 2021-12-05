@@ -1,0 +1,4 @@
+Filter: ON PK Fc 5700 Hz Gain 3 dB Q 8
+Filter: ON PK Fc 5700 Hz Gain -1 dB Q 13
+# Filter: ON PK Fc 5850 Hz Gain -0.4 dB Q 1.5
+Filter: ON PK Fc 5600 Hz Gain -2 dB Q 3.7227

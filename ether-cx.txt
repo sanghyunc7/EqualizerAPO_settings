@@ -1,0 +1,14 @@
+Preamp: -2 dB
+Include: ether-cx-auteur-pads.txt
+Include: ether-12kHz peak.txt
+Include: ether-9.7kHz peak.txt
+Include: ether-6.4kHz dip.txt
+Include: ether-6.1kHz peak.txt
+Include: ether-5kHz peak.txt
+Include: ether-2.9kHz dip.txt
+Include: ether-1.8kHz peak.txt
+Include: ether-1.3kHz dip.txt
+Include: ether-600Hz peak.txt
+Include: ether-70Hz peak.txt
+Include: ether-lowshelf.txt
+Include: ether-highshelf.txt

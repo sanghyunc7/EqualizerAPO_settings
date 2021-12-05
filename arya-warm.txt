@@ -1,0 +1,2 @@
+Filter: ON LS Fc 100 Hz Gain 1 dB
+Filter: ON LS Fc 600 Hz Gain 2 dB

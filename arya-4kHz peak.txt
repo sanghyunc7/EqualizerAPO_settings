@@ -1,0 +1,2 @@
+Filter: ON PK Fc 4000 Hz Gain -2 dB Q 3
+Filter: ON PK Fc 4000 Hz Gain 0.5 dB Q 8

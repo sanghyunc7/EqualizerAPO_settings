@@ -1,0 +1,2 @@
+# Filter: ON PK Fc 25 Hz Gain 3 dB Q 1.5
+Filter: ON PK Fc 120 Hz Gain 0.5 dB Q 2.5

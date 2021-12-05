@@ -1,0 +1,2 @@
+Filter: ON PK Fc 1500 Hz Gain 0.75 dB Q 0.5
+Filter: ON PK Fc 1000 Hz Gain -1 dB Q 1.8
