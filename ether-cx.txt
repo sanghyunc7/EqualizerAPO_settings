@@ -12,3 +12,4 @@ Include: ether-600Hz peak.txt
 Include: ether-70Hz peak.txt
 Include: ether-lowshelf.txt
 Include: ether-highshelf.txt
+Include: ether-bright.txt

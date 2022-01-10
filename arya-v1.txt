@@ -10,3 +10,4 @@ Include: arya-200Hz peak.txt
 # Include: arya-edm.txt
 # Include: arya-warm.txt
 # Include: arya-classical.txt
+# Include: arya-upperbass.txt
