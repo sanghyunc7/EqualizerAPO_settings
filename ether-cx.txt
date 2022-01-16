@@ -1,4 +1,4 @@
-Preamp: -2 dB
+# Preamp: -2 dB
 Include: ether-cx-auteur-pads.txt
 Include: ether-12kHz peak.txt
 Include: ether-9.7kHz peak.txt
