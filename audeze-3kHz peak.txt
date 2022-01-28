@@ -1,0 +1,2 @@
+Filter: ON PK Fc 2300 Hz Gain -2 dB Q 2
+Filter: ON PK Fc 3200 Hz Gain -1 dB Q 2
