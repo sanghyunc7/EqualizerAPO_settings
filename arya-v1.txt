@@ -1,5 +1,5 @@
 Include: arya-harman-target.txt
-Preamp: -4.4 dB
+Preamp: -3.5 dB
 # Preamp: 2 dB
 Include: arya-lowshelf.txt
 Include: arya-1kHz peak.txt

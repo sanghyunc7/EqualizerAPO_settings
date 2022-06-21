@@ -3,8 +3,8 @@
 # Include: ether-cx.txt
 # Include: fostex-T50RP.txt
 # Filter: ON HSC Fc 2500 Hz Gain 2.5 dB Q 0.9
-# Include: arya-v1.txt
+Include: arya-v1.txt
 # Include: speaker.txt
-Include: audeze-X.txt
+# Include: audeze-X.txt
 # Channel: R
 # Preamp: -0.5 dB
