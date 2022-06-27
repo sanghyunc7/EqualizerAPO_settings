@@ -1,5 +1,7 @@
-Filter: ON PK Fc 3000 Hz Gain -0.5 dB Q 1.5
+Filter: ON PK Fc 3000 Hz Gain 3.5 dB Q 1.5
 # Filter: ON PK Fc 3500 Hz Gain -2 dB Q 2
-Filter: ON PK Fc 3800 Hz Gain -4 dB Q 2
-Filter: ON PK Fc 4300 Hz Gain -3.5 dB Q 1.8
-Filter: ON PK Fc 2600 Hz Gain -2 dB Q 1.5
+Filter: ON PK Fc 3800 Hz Gain -5 dB Q 2
+Filter: ON PK Fc 4300 Hz Gain -4.5 dB Q 1.8
+Filter: ON PK Fc 2600 Hz Gain -3 dB Q 1.5
+Filter: ON PK Fc 2000 Hz Gain -2 dB Q 1.6
+Filter: ON PK Fc 1500 Hz Gain -1 dB Q 1.6
