@@ -4,4 +4,4 @@ Include: audeze-3kHz peak.txt
 Include: audeze-highshelf.txt
 # Include: audeze-pullback-vocal.txt
 Include: audeze-lowshelf.txt
-# Preamp: 10 dB
+Preamp: -3 dB

@@ -1,1 +1,1 @@
-# Filter: ON PK Fc 900 Hz Gain -3 dB Q 1
+Filter: ON PK Fc 900 Hz Gain -3 dB Q 1.2
