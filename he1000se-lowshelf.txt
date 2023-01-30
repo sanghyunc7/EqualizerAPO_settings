@@ -1,3 +1,4 @@
 # Filter: ON LSC Fc 81 Hz Gain 1 dB Q 2.027
 Filter: ON LSC Fc 600 Hz Gain -6 dB Q 0.75
 Filter: ON LSC Fc 182.4 Hz Gain -2 dB Q 0.9928
+# Filter: ON LSC Fc 5309.21 Hz Gain -6.4 dB Q 0.7742
