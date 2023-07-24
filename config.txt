@@ -1,7 +1,7 @@
 Preamp: -20 dB
 Preamp: -20 dB
-Preamp: 12.7 dB
-Preamp: -8.7 dB
+Preamp: 8.5 dB
+Preamp: 11.2 dB
 # Include: ether-cx.txt
 # Include: fostex-T50RP.txt
 # Filter: ON HSC Fc 2500 Hz Gain 2.5 dB Q 0.9
