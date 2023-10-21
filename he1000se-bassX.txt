@@ -1,0 +1,3 @@
+Filter: ON HSC Fc 110.16 Hz Gain -4.8 dB Q 1.482
+# Filter: ON HS Fc 100 Hz Gain 0 dB
+# Filter: ON LS Fc 81.29 Hz Gain 3 dB
