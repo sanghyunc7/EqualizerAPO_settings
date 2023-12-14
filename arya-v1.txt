@@ -2,11 +2,11 @@ Include: arya-harman-target.txt
 Preamp: -0.1 dB
 # Preamp: 2 dB
 Include: arya-lowshelf.txt
-Include: arya-1kHz peak.txt
-Include: arya-4kHz peak.txt
-Include: arya-9kHz peak.txt
+Include: arya-1kHz-peak.txt
+Include: arya-4kHz-peak.txt
+Include: arya-9kHz-peak.txt
 Include: arya-highshelf.txt
-Include: arya-200Hz peak.txt
+Include: arya-200Hz-peak.txt
 # Include: arya-edm.txt
 # Include: arya-warm.txt
 # Include: arya-classical.txt
