@@ -1,7 +1,7 @@
 Include: he1000se-harman-target.txt
-Preamp: 4.1 dB
+Preamp: 4.5 dB
 # Preamp: 7.7 dB
-Include: he1000se-lowshelf.txt
+# Include: he1000se-lowshelf.txt
 Include: he1000se-200Hz-peak.txt
 Include: he1000se-1kHz-peak.txt
 Include: he1000se-4kHz-peak.txt
