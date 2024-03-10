@@ -1,0 +1,244 @@
+description: null
+devices:
+  adjust_period: null
+  capture:
+    channels: 2
+    device: BlackHole 2ch
+    format: FLOAT32LE
+    type: CoreAudio
+  capture_samplerate: null
+  chunksize: 1024
+  enable_rate_adjust: null
+  playback:
+    channels: 2
+    device: MacBook Pro Speakers
+    exclusive: null
+    format: null
+    type: CoreAudio
+  queuelimit: null
+  rate_measure_interval: null
+  samplerate: 44100
+  silence_threshold: null
+  silence_timeout: null
+  stop_on_rate_change: null
+  target_level: null
+  volume_ramp_time: null
+filters:
+  Filter_1:
+    description: 'Filter: ON HSC Fc 100 Hz Gain -1 dB Q 2'
+    parameters:
+      freq: 100
+      gain: -1
+      q: 2
+      type: Highshelf
+    type: Biquad
+  Filter_10:
+    description: 'Filter: ON HSC Fc 6500 Hz Gain 3 dB Q 3'
+    parameters:
+      freq: 6500
+      gain: 3
+      q: 3
+      type: Highshelf
+    type: Biquad
+  Filter_11:
+    description: 'Filter: ON PK Fc 7300 Hz Gain 1 dB Q 7.9225'
+    parameters:
+      freq: 7300
+      gain: 1
+      q: 7.9225
+      type: Peaking
+    type: Biquad
+  Filter_12:
+    description: 'Filter: ON HSC Fc 8000 Hz Gain -4 dB Q 3'
+    parameters:
+      freq: 8000
+      gain: -4
+      q: 3
+      type: Highshelf
+    type: Biquad
+  Filter_13:
+    description: 'Filter: ON HSC Fc 11652 Hz Gain 4 dB Q 1.9'
+    parameters:
+      freq: 11652
+      gain: 4
+      q: 1.9
+      type: Highshelf
+    type: Biquad
+  Filter_2:
+    description: 'Filter: ON LSC Fc 100 Hz Gain 1.5 dB Q 0.4559'
+    parameters:
+      freq: 100
+      gain: 1.5
+      q: 0.4559
+      type: Lowshelf
+    type: Biquad
+  Filter_3:
+    description: 'Filter: ON PK Fc 100 Hz Gain 0 dB Q 10'
+    parameters:
+      freq: 100
+      gain: 0
+      q: 10
+      type: Peaking
+    type: Biquad
+  Filter_4:
+    description: 'Filter: ON HSC Fc 600 Hz Gain 1 dB Q 1'
+    parameters:
+      freq: 600
+      gain: 1
+      q: 1
+      type: Highshelf
+    type: Biquad
+  Filter_5:
+    description: 'Filter: ON PK Fc 900 Hz Gain -3 dB Q 1'
+    parameters:
+      freq: 900
+      gain: -3
+      q: 1
+      type: Peaking
+    type: Biquad
+  Filter_6:
+    description: 'Filter: ON HSC Fc 3000 Hz Gain -1 dB Q 0.7523'
+    parameters:
+      freq: 3000
+      gain: -1
+      q: 0.7523
+      type: Highshelf
+    type: Biquad
+  Filter_7:
+    description: 'Filter: ON HSC Fc 4000 Hz Gain -2 dB Q 2'
+    parameters:
+      freq: 4000
+      gain: -2
+      q: 2
+      type: Highshelf
+    type: Biquad
+  Filter_8:
+    description: 'Filter: ON HSC Fc 5000 Hz Gain 2 dB Q 2'
+    parameters:
+      freq: 5000
+      gain: 2
+      q: 2
+      type: Highshelf
+    type: Biquad
+  Filter_9:
+    description: 'Filter: ON HSC Fc 5800 Hz Gain -3 dB Q 3'
+    parameters:
+      freq: 5800
+      gain: -3
+      q: 3
+      type: Highshelf
+    type: Biquad
+  Preamp_1:
+    description: 'Preamp: -1.6 dB'
+    parameters:
+      gain: -1.6
+      inverted: null
+      mute: null
+      scale: dB
+    type: Gain
+mixers:
+  stereo:
+    channels:
+      in: 2
+      out: 2
+    description: null
+    mapping:
+    - dest: 0
+      mute: null
+      sources:
+      - channel: 0
+        gain: 0
+        inverted: null
+        mute: null
+        scale: null
+    - dest: 1
+      mute: null
+      sources:
+      - channel: 1
+        gain: 0
+        inverted: null
+        mute: null
+        scale: null
+pipeline:
+- bypassed: null
+  description: null
+  name: stereo
+  type: Mixer
+- bypassed: null
+  channel: 0
+  description: Default, all channels
+  names:
+  - Preamp_1
+  - Filter_1
+  - Filter_2
+  - Filter_3
+  - Filter_4
+  - Filter_5
+  - Filter_6
+  - Filter_7
+  - Filter_8
+  - Filter_9
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  type: Filter
+- bypassed: null
+  channel: 1
+  description: Default, all channels
+  names:
+  - Preamp_1
+  - Filter_1
+  - Filter_2
+  - Filter_3
+  - Filter_4
+  - Filter_5
+  - Filter_6
+  - Filter_7
+  - Filter_8
+  - Filter_9
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  type: Filter
+- bypassed: null
+  channel: 0
+  description: Default, all channels
+  names:
+  - Preamp_1
+  - Filter_1
+  - Filter_2
+  - Filter_3
+  - Filter_4
+  - Filter_5
+  - Filter_6
+  - Filter_7
+  - Filter_8
+  - Filter_9
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  type: Filter
+- bypassed: null
+  channel: 1
+  description: Default, all channels
+  names:
+  - Preamp_1
+  - Filter_1
+  - Filter_2
+  - Filter_3
+  - Filter_4
+  - Filter_5
+  - Filter_6
+  - Filter_7
+  - Filter_8
+  - Filter_9
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  type: Filter
+processors: null
+title: null
