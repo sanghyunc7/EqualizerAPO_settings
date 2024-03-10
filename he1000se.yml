@@ -1,28 +1,31 @@
-description: null
+description: No signal processing.
 devices:
   adjust_period: null
   capture:
     channels: 2
-    device: BlackHole 2ch
-    format: FLOAT32LE
-    type: CoreAudio
+    extra_samples: null
+    filename: /dev/stdin
+    format: FLOAT64LE
+    read_bytes: null
+    skip_bytes: null
+    type: File
   capture_samplerate: null
-  chunksize: 1024
+  chunksize: 4096
   enable_rate_adjust: null
   playback:
     channels: 2
-    device: MacBook Pro Speakers
-    exclusive: null
-    format: null
-    type: CoreAudio
-  queuelimit: null
+    device: plughw:0,0
+    format: FLOAT64LE
+    type: Alsa
+  queuelimit: 1
   rate_measure_interval: null
-  samplerate: 44100
+  resampler: null
+  samplerate: 768000
   silence_threshold: null
   silence_timeout: null
   stop_on_rate_change: null
   target_level: null
-  volume_ramp_time: null
+  volume_ramp_time: 150
 filters:
   Filter_1:
     description: 'Filter: ON HSC Fc 100 Hz Gain -1 dB Q 2'
@@ -164,44 +167,6 @@ pipeline:
   description: null
   name: stereo
   type: Mixer
-- bypassed: null
-  channel: 0
-  description: Default, all channels
-  names:
-  - Preamp_1
-  - Filter_1
-  - Filter_2
-  - Filter_3
-  - Filter_4
-  - Filter_5
-  - Filter_6
-  - Filter_7
-  - Filter_8
-  - Filter_9
-  - Filter_10
-  - Filter_11
-  - Filter_12
-  - Filter_13
-  type: Filter
-- bypassed: null
-  channel: 1
-  description: Default, all channels
-  names:
-  - Preamp_1
-  - Filter_1
-  - Filter_2
-  - Filter_3
-  - Filter_4
-  - Filter_5
-  - Filter_6
-  - Filter_7
-  - Filter_8
-  - Filter_9
-  - Filter_10
-  - Filter_11
-  - Filter_12
-  - Filter_13
-  type: Filter
 - bypassed: null
   channel: 0
   description: Default, all channels
