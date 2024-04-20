@@ -1,7 +1,7 @@
 Preamp: -20 dB
 # Preamp: -20 dB
-Preamp: -0.8 dB
-# Preamp: 2 dB
+# Preamp: -10.1 dB
+Preamp: 15.1 dB
 Include: he1000se.txt
 # Include: arya-v1.txt
 # Include: ether-cx.txt
