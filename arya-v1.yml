@@ -1,0 +1,435 @@
+description: No signal processing.
+devices:
+  adjust_period: null
+  capture:
+    channels: 2
+    extra_samples: null
+    filename: /dev/stdin
+    format: FLOAT64LE
+    read_bytes: null
+    skip_bytes: null
+    type: File
+  capture_samplerate: null
+  chunksize: 4096
+  enable_rate_adjust: null
+  playback:
+    channels: 2
+    device: plughw:0,0
+    format: FLOAT64LE
+    type: Alsa
+  queuelimit: 1
+  rate_measure_interval: null
+  resampler: null
+  samplerate: 768000
+  silence_threshold: null
+  silence_timeout: null
+  stop_on_rate_change: null
+  target_level: null
+  volume_ramp_time: 150
+filters:
+  Filter_00:
+    description: 'Filter: ON LS Fc 60 Hz Gain 1 dB'
+    parameters:
+      freq: 60.0
+      gain: 1.0
+      q: 0.9
+      type: Lowshelf
+    type: Biquad
+  Filter_01:
+    description: 'Filter: ON LS Fc 100 Hz Gain -5 dB'
+    parameters:
+      freq: 100.0
+      gain: -5.0
+      q: 0.9
+      type: Lowshelf
+    type: Biquad
+  Filter_02:
+    description: 'Filter: ON LSC Fc 105 Hz Gain 5.5 dB Q 0.71'
+    parameters:
+      freq: 105.0
+      gain: 5.5
+      q: 0.71
+      type: Lowshelf
+    type: Biquad
+  Filter_03:
+    description: 'Filter: ON LS Fc 130 Hz Gain -4 dB'
+    parameters:
+      freq: 130.0
+      gain: -4.0
+      q: 0.9
+      type: Lowshelf
+    type: Biquad
+  Filter_04:
+    description: 'Filter: ON LS Fc 200 Hz Gain -1 dB'
+    parameters:
+      freq: 200.0
+      gain: -1.0
+      q: 0.9
+      type: Lowshelf
+    type: Biquad
+  Filter_05:
+    description: 'Filter: ON PK Fc 200 Hz Gain -1 dB Q 2'
+    parameters:
+      freq: 200.0
+      gain: -1.0
+      q: 2.0
+      type: Peaking
+    type: Biquad
+  Filter_06:
+    description: 'Filter: ON LSC Fc 220 Hz Gain 5 dB Q 0.6'
+    parameters:
+      freq: 220.0
+      gain: 5.0
+      q: 0.6
+      type: Lowshelf
+    type: Biquad
+  Filter_07:
+    description: 'Filter: ON LSC Fc 600 Hz Gain -6 dB Q 0.75'
+    parameters:
+      freq: 600.0
+      gain: -6.0
+      q: 0.75
+      type: Lowshelf
+    type: Biquad
+  Filter_08:
+    description: 'Filter: ON PK Fc 900 Hz Gain -3 dB Q 1.2'
+    parameters:
+      freq: 900.0
+      gain: -3.0
+      q: 1.2
+      type: Peaking
+    type: Biquad
+  Filter_09:
+    description: 'Filter: ON PK Fc 1500 Hz Gain -1 dB Q 1.6'
+    parameters:
+      freq: 1500.0
+      gain: -1.0
+      q: 1.6
+      type: Peaking
+    type: Biquad
+  Filter_10:
+    description: 'Filter: ON PK Fc 1800 Hz Gain 5 dB Q 1.2'
+    parameters:
+      freq: 1800.0
+      gain: 5.0
+      q: 1.2
+      type: Peaking
+    type: Biquad
+  Filter_11:
+    description: 'Filter: ON PK Fc 2000 Hz Gain -1 dB Q 1.6'
+    parameters:
+      freq: 2000.0
+      gain: -1.0
+      q: 1.6
+      type: Peaking
+    type: Biquad
+  Filter_12:
+    description: 'Filter: ON PK Fc 2600 Hz Gain -1 dB Q 1.5'
+    parameters:
+      freq: 2600.0
+      gain: -1.0
+      q: 1.5
+      type: Peaking
+    type: Biquad
+  Filter_13:
+    description: 'Filter: ON PK Fc 2680 Hz Gain -2 dB Q 3.2'
+    parameters:
+      freq: 2680.0
+      gain: -2.0
+      q: 3.2
+      type: Peaking
+    type: Biquad
+  Filter_14:
+    description: 'Filter: ON PK Fc 3000 Hz Gain 4 dB Q 1.5'
+    parameters:
+      freq: 3000.0
+      gain: 4.0
+      q: 1.5
+      type: Peaking
+    type: Biquad
+  Filter_15:
+    description: 'Filter: ON PK Fc 3500 Hz Gain -2 dB Q 2'
+    parameters:
+      freq: 3500.0
+      gain: -2.0
+      q: 2.0
+      type: Peaking
+    type: Biquad
+  Filter_16:
+    description: 'Filter: ON PK Fc 3800 Hz Gain -7 dB Q 1.5'
+    parameters:
+      freq: 3800.0
+      gain: -7.0
+      q: 1.5
+      type: Peaking
+    type: Biquad
+  Filter_17:
+    description: 'Filter: ON PK Fc 4300 Hz Gain -2.7 dB Q 7'
+    parameters:
+      freq: 4300.0
+      gain: -2.7
+      q: 7.0
+      type: Peaking
+    type: Biquad
+  Filter_18:
+    description: 'Filter: ON PK Fc 4500 Hz Gain -6.5 dB Q 1.5'
+    parameters:
+      freq: 4500.0
+      gain: -6.5
+      q: 1.5
+      type: Peaking
+    type: Biquad
+  Filter_19:
+    description: 'Filter: ON PK Fc 4850 Hz Gain -2.2 dB Q 6'
+    parameters:
+      freq: 4850.0
+      gain: -2.2
+      q: 6.0
+      type: Peaking
+    type: Biquad
+  Filter_20:
+    description: 'Filter: ON HS Fc 5000 Hz Gain -3 dB'
+    parameters:
+      freq: 5000.0
+      gain: -3.0
+      q: 0.9
+      type: Peaking
+    type: Biquad
+  Filter_21:
+    description: 'Filter: ON HSC Fc 6000 Hz Gain 1 dB Q 0.7'
+    parameters:
+      freq: 6000.0
+      gain: 1.0
+      q: 0.7
+      type: Peaking
+    type: Biquad
+  Filter_22:
+    description: 'Filter: ON PK Fc 6400 Hz Gain -1.5 dB Q 7'
+    parameters:
+      freq: 6400.0
+      gain: -1.5
+      q: 7.0
+      type: Peaking
+    type: Biquad
+  Filter_23:
+    description: 'Filter: ON PK Fc 7000 Hz Gain -1.5 dB Q 6'
+    parameters:
+      freq: 7000.0
+      gain: -1.5
+      q: 6.0
+      type: Peaking
+    type: Biquad
+  Filter_24:
+    description: 'Filter: ON HS Fc 8000 Hz Gain -1 dB'
+    parameters:
+      freq: 8000.0
+      gain: -1.0
+      q: 0.9
+      type: Peaking
+    type: Biquad
+  Filter_25:
+    description: 'Filter: ON PK Fc 8000 Hz Gain -4 dB Q 5.5'
+    parameters:
+      freq: 8000.0
+      gain: -4.0
+      q: 5.5
+      type: Peaking
+    type: Biquad
+  Filter_26:
+    description: 'Filter: ON PK Fc 8150 Hz Gain -1.8 dB Q 6'
+    parameters:
+      freq: 8150.0
+      gain: -1.8
+      q: 6.0
+      type: Peaking
+    type: Biquad
+  Filter_27:
+    description: 'Filter: ON PK Fc 9000 Hz Gain -5 dB Q 4.5'
+    parameters:
+      freq: 9000.0
+      gain: -5.0
+      q: 4.5
+      type: Peaking
+    type: Biquad
+  Filter_28:
+    description: 'Filter: ON HSC Fc 10000 Hz Gain -2 dB Q 0.6'
+    parameters:
+      freq: 10000.0
+      gain: -2.0
+      q: 0.6
+      type: Peaking
+    type: Biquad
+  Filter_29:
+    description: 'Filter: ON PK Fc 10000 Hz Gain -5.5 dB Q 2'
+    parameters:
+      freq: 10000.0
+      gain: -5.5
+      q: 2.0
+      type: Peaking
+    type: Biquad
+  Filter_30:
+    description: 'Filter: ON HS Fc 11500 Hz Gain -1 dB'
+    parameters:
+      freq: 11500.0
+      gain: -1.0
+      q: 0.9
+      type: Peaking
+    type: Biquad
+  Filter_31:
+    description: 'Filter: ON HSC Fc 12000 Hz Gain 3 dB Q 0.71'
+    parameters:
+      freq: 12000.0
+      gain: 3.0
+      q: 0.71
+      type: Peaking
+    type: Biquad
+  Filter_32:
+    description: 'Filter: ON PK Fc 12500 Hz Gain -6 dB Q 6'
+    parameters:
+      freq: 12500.0
+      gain: -6.0
+      q: 6.0
+      type: Peaking
+    type: Biquad
+  Filter_33:
+    description: 'Filter: ON HS Fc 13000 Hz Gain -10 dB'
+    parameters:
+      freq: 13000.0
+      gain: -10.0
+      q: 0.9
+      type: Peaking
+    type: Biquad
+  Filter_34:
+    description: 'Filter: ON PK Fc 13000 Hz Gain -5 dB Q 3'
+    parameters:
+      freq: 13000.0
+      gain: -5.0
+      q: 3.0
+      type: Peaking
+    type: Biquad
+  Filter_35:
+    description: 'Filter: ON HS Fc 16000 Hz Gain -1 dB'
+    parameters:
+      freq: 16000.0
+      gain: -1.0
+      q: 0.9
+      type: Peaking
+    type: Biquad
+  Preamp_36:
+    description: 'Preamp: -0.1 dB'
+    parameters:
+      gain: '-0.1'
+      scale: dB
+    type: Gain
+mixers:
+  stereo:
+    channels:
+      in: 2
+      out: 2
+    description: null
+    mapping:
+    - dest: 0
+      mute: null
+      sources:
+      - channel: 0
+        gain: 0
+        inverted: null
+        mute: null
+        scale: null
+    - dest: 1
+      mute: null
+      sources:
+      - channel: 1
+        gain: 0
+        inverted: null
+        mute: null
+        scale: null
+pipeline:
+- bypassed: null
+  description: null
+  name: stereo
+  type: Mixer
+- channel: 0
+  description: Default, all channels
+  names:
+  - Filter_00
+  - Filter_01
+  - Filter_02
+  - Filter_03
+  - Filter_04
+  - Filter_05
+  - Filter_06
+  - Filter_07
+  - Filter_08
+  - Filter_09
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  - Filter_14
+  - Filter_15
+  - Filter_16
+  - Filter_17
+  - Filter_18
+  - Filter_19
+  - Filter_20
+  - Filter_21
+  - Filter_22
+  - Filter_23
+  - Filter_24
+  - Filter_25
+  - Filter_26
+  - Filter_27
+  - Filter_28
+  - Filter_29
+  - Filter_30
+  - Filter_31
+  - Filter_32
+  - Filter_33
+  - Filter_34
+  - Filter_35
+  - Preamp_36
+  type: Filter
+- channel: 1
+  description: Default, all channels
+  names:
+  - Filter_00
+  - Filter_01
+  - Filter_02
+  - Filter_03
+  - Filter_04
+  - Filter_05
+  - Filter_06
+  - Filter_07
+  - Filter_08
+  - Filter_09
+  - Filter_10
+  - Filter_11
+  - Filter_12
+  - Filter_13
+  - Filter_14
+  - Filter_15
+  - Filter_16
+  - Filter_17
+  - Filter_18
+  - Filter_19
+  - Filter_20
+  - Filter_21
+  - Filter_22
+  - Filter_23
+  - Filter_24
+  - Filter_25
+  - Filter_26
+  - Filter_27
+  - Filter_28
+  - Filter_29
+  - Filter_30
+  - Filter_31
+  - Filter_32
+  - Filter_33
+  - Filter_34
+  - Filter_35
+  - Preamp_36
+  type: Filter
+processors: null
+title: null

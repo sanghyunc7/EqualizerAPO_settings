@@ -37,7 +37,6 @@ class Translator:
     def extract_data(self, txt_field):
         values = txt_field.split(":")
         words = values[1].split()
-        print(words)
         d = {}
         if "Preamp" == values[0]:
             d["data_type"] = "Preamp"
@@ -97,3 +96,4 @@ if __name__ == "__main__":
     translator = Translator(input_file, output_file)
     translator.txt_to_json()
     translator.json_to_yaml()
+    print("Done")
