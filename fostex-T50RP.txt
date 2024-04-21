@@ -1,5 +1,5 @@
 Preamp: -1 dB
 Include: fostex-lowshelf.txt
 Include: fostex-highshelf.txt
-Include: fostex-1.3kHz dip.txt
-Include: fostex-8kHz peak.txt
+Include: fostex-1.3kHz-dip.txt
+Include: fostex-8kHz-peak.txt
