@@ -40,7 +40,7 @@ class Translator:
         d = {}
         if "Preamp" == values[0]:
             d["data_type"] = "Preamp"
-            d["gain"] = words[0]
+            d["gain"] = float(words[0])
         else:
             d["data_type"] = "Filter"
             d["type"] = "Peaking"
