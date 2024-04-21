@@ -11,6 +11,8 @@ class Flat_TXT:
         with open(include_file, "r") as f:
             for line in f:
                 line = line.strip()
+                if not line:
+                    continue
                 if not line.startswith("#"):  # Skip commented-out lines
                     if line.startswith("Include:"):
                         child_file = line.split(": ")[1]

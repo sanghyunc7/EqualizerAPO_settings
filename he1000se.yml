@@ -28,26 +28,26 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON LSC Fc 80 Hz Gain 3 dB Q 0.8'
+    description: 'Filter: ON LSC Fc 80 Hz Gain 1.5 dB Q 0.8'
     parameters:
       freq: 80.0
-      gain: 3.0
+      gain: 1.5
       q: 0.8
       type: Lowshelf
     type: Biquad
   Filter_01:
-    description: 'Filter: ON LSC Fc 320 Hz Gain -2 dB Q 0.5557'
+    description: 'Filter: ON LSC Fc 320 Hz Gain -1 dB Q 0.5557'
     parameters:
       freq: 320.0
-      gain: -2.0
+      gain: -1.0
       q: 0.5557
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON LSC Fc 500 Hz Gain -3 dB Q 0.8'
+    description: 'Filter: ON LSC Fc 500 Hz Gain -1.5 dB Q 0.8'
     parameters:
       freq: 500.0
-      gain: -3.0
+      gain: -1.5
       q: 0.8
       type: Lowshelf
     type: Biquad

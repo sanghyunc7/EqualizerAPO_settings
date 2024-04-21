@@ -35,21 +35,26 @@ class Translator:
     # outputs json that adheres to dsp formatting
 
     def extract_data(self, txt_field):
-        words = txt_field.split()
+        values = txt_field.split(":")
+        words = values[1].split()
+        print(words)
         d = {}
-        if "Preamp:" == words[0]:
+        if "Preamp" == values[0]:
             d["data_type"] = "Preamp"
-            d["gain"] = words[1]
+            d["gain"] = words[0]
         else:
             d["data_type"] = "Filter"
             d["type"] = "Peaking"
-            if words[2] == "LSC":
+            if words[1] in ["LSC", "LS"]:
                 d["type"] = "Lowshelf"
-            elif words[2] == "HSC":
+            elif words[1] == ["HSC", "HS"]:
                 d["type"] = "Highshelf"
-            d["freq"] = float(words[4])
-            d["gain"] = float(words[7])
-            d["q"] = float(words[-1])
+            d["freq"] = float(words[3])
+            d["gain"] = float(words[6])
+            if words[1] in ["HS", "LS"]:
+                d["q"] = 0.9
+            else:
+                d["q"] = float(words[-1])
         return d
 
     def padded(self, i, padding):
@@ -88,7 +93,7 @@ if __name__ == "__main__":
     if not input_file.endswith(".txt"):
         print("input text file")
         sys.exit(1)
-    output_file = input_file.rstrip(".txt") + ".yml"
+    output_file = input_file[:-4] + ".yml"
     translator = Translator(input_file, output_file)
     translator.txt_to_json()
     translator.json_to_yaml()
