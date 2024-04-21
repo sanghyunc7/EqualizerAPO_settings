@@ -46,7 +46,7 @@ class Translator:
             d["type"] = "Peaking"
             if words[1] in ["LSC", "LS"]:
                 d["type"] = "Lowshelf"
-            elif words[1] == ["HSC", "HS"]:
+            elif words[1] in ["HSC", "HS"]:
                 d["type"] = "Highshelf"
             d["freq"] = float(words[3])
             d["gain"] = float(words[6])

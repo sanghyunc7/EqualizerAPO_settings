@@ -134,7 +134,7 @@ filters:
   Preamp_13:
     description: 'Preamp: -1.5 dB'
     parameters:
-      gain: '-1.5'
+      gain: -1.5
       scale: dB
     type: Gain
 mixers:
