@@ -1,1 +1,1 @@
-Filter: ON LSC Fc 320 Hz Gain -1 dB Q 0.5557
+Filter: ON LSC Fc 320 Hz Gain -2 dB Q 0.5557
