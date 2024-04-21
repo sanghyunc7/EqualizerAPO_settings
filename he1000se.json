@@ -1,0 +1,262 @@
+{
+    "description": "No signal processing.",
+    "devices": {
+        "adjust_period": null,
+        "capture": {
+            "channels": 2,
+            "extra_samples": null,
+            "filename": "/dev/stdin",
+            "format": "FLOAT64LE",
+            "read_bytes": null,
+            "skip_bytes": null,
+            "type": "File"
+        },
+        "capture_samplerate": null,
+        "chunksize": 4096,
+        "enable_rate_adjust": null,
+        "playback": {
+            "channels": 2,
+            "device": "plughw:0,0",
+            "format": "FLOAT64LE",
+            "type": "Alsa"
+        },
+        "queuelimit": 1,
+        "rate_measure_interval": null,
+        "resampler": null,
+        "samplerate": 768000,
+        "silence_threshold": null,
+        "silence_timeout": null,
+        "stop_on_rate_change": null,
+        "target_level": null,
+        "volume_ramp_time": 150
+    },
+    "filters": {
+        "Filter_1": {
+            "description": "Filter: ON LSC Fc 80 Hz Gain 3 dB Q 0.8",
+            "parameters": {
+                "freq": 80,
+                "gain": 3,
+                "q": 0.8,
+                "type": "Lowshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_10": {
+            "description": "Filter: ON PK Fc 8000 Hz Gain -4 dB Q 3",
+            "parameters": {
+                "freq": 8000,
+                "gain": -4,
+                "q": 3,
+                "type": "Peaking"
+            },
+            "type": "Biquad"
+        },
+        "Filter_11": {
+            "description": "Filter: ON PK Fc 10000 Hz Gain -10 dB Q 1.9",
+            "parameters": {
+                "freq": 10000,
+                "gain": -10,
+                "q": 1.9,
+                "type": "Peaking"
+            },
+            "type": "Biquad"
+        },
+        "Filter_12": {
+            "description": "Filter: ON PK Fc 12000 Hz Gain -4 dB Q 1.8",
+            "parameters": {
+                "freq": 12000,
+                "gain": -4,
+                "q": 1.8,
+                "type": "Peaking"
+            },
+            "type": "Biquad"
+        },
+        "Filter_13": {
+            "description": "Filter: ON PK Fc 15000 Hz Gain -9 dB Q 1.3",
+            "parameters": {
+                "freq": 15000,
+                "gain": -9,
+                "q": 1.3,
+                "type": "Peaking"
+            },
+            "type": "Biquad"
+        },
+        "Filter_2": {
+            "description": "Filter: ON LSC Fc 320 Hz Gain -2 dB Q 0.6",
+            "parameters": {
+                "freq": 320,
+                "gain": -2,
+                "q": 0.6,
+                "type": "Lowshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_3": {
+            "description": "Filter: ON LSC Fc 500 Hz Gain -3 dB Q 0.8",
+            "parameters": {
+                "freq": 500,
+                "gain": -3,
+                "q": 0.8,
+                "type": "Lowshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_4": {
+            "description": "Filter: ON PK Fc 3000 Hz Gain -3 dB Q 1.6",
+            "parameters": {
+                "freq": 3000,
+                "gain": -3,
+                "q": 1.6,
+                "type": "Peaking"
+            },
+            "type": "Biquad"
+        },
+        "Filter_5": {
+            "description": "Filter: ON HSC Fc 4000 Hz Gain -1 dB Q 2",
+            "parameters": {
+                "freq": 4000,
+                "gain": -1,
+                "q": 2,
+                "type": "Highshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_6": {
+            "description": "Filter: ON HSC Fc 5000 Hz Gain 1 dB Q 2",
+            "parameters": {
+                "freq": 5000,
+                "gain": 1,
+                "q": 2,
+                "type": "Highshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_7": {
+            "description": "Filter: ON HSC Fc 5500 Hz Gain 1 dB Q 0.9",
+            "parameters": {
+                "freq": 5500,
+                "gain": 1,
+                "q": 0.9,
+                "type": "Highshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_8": {
+            "description": "Filter: ON HSC Fc 5700 Hz Gain -2 dB Q 3",
+            "parameters": {
+                "freq": 5700,
+                "gain": -2,
+                "q": 3,
+                "type": "Highshelf"
+            },
+            "type": "Biquad"
+        },
+        "Filter_9": {
+            "description": "Filter: ON HSC Fc 6500 Hz Gain 2 dB Q 3",
+            "parameters": {
+                "freq": 6500,
+                "gain": 2,
+                "q": 3,
+                "type": "Highshelf"
+            },
+            "type": "Biquad"
+        },
+        "Preamp_1": {
+            "description": "Preamp: -1.5 dB",
+            "parameters": {
+                "gain": -1.5,
+                "scale": "dB"
+            },
+            "type": "Gain"
+        }
+    },
+    "mixers": {
+        "stereo": {
+            "channels": {
+                "in": 2,
+                "out": 2
+            },
+            "description": null,
+            "mapping": [
+                {
+                    "dest": 0,
+                    "mute": null,
+                    "sources": [
+                        {
+                            "channel": 0,
+                            "gain": 0,
+                            "inverted": null,
+                            "mute": null,
+                            "scale": null
+                        }
+                    ]
+                },
+                {
+                    "dest": 1,
+                    "mute": null,
+                    "sources": [
+                        {
+                            "channel": 1,
+                            "gain": 0,
+                            "inverted": null,
+                            "mute": null,
+                            "scale": null
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "pipeline": [
+        {
+            "bypassed": null,
+            "description": null,
+            "name": "stereo",
+            "type": "Mixer"
+        },
+        {
+            "channel": 0,
+            "description": "Default, all channels",
+            "names": [
+                "Filter_1",
+                "Filter_2",
+                "Filter_3",
+                "Filter_4",
+                "Filter_5",
+                "Filter_6",
+                "Filter_7",
+                "Filter_8",
+                "Filter_9",
+                "Filter_10",
+                "Filter_11",
+                "Filter_12",
+                "Filter_13",
+                "Preamp_1"
+            ],
+            "type": "Filter"
+        },
+        {
+            "channel": 1,
+            "description": "Default, all channels",
+            "names": [
+                "Filter_1",
+                "Filter_2",
+                "Filter_3",
+                "Filter_4",
+                "Filter_5",
+                "Filter_6",
+                "Filter_7",
+                "Filter_8",
+                "Filter_9",
+                "Filter_10",
+                "Filter_11",
+                "Filter_12",
+                "Filter_13",
+                "Preamp_1"
+            ],
+            "type": "Filter"
+        }
+    ],
+    "processors": null,
+    "title": null
+}
