@@ -28,50 +28,50 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON LSC Fc 80 Hz Gain 2 dB Q 0.8'
+    description: 'Filter: ON LSC Fc 140 Hz Gain 2 dB Q 0.9'
     parameters:
-      freq: 80.0
+      freq: 140.0
       gain: 2.0
-      q: 0.8
+      q: 0.9
       type: Lowshelf
     type: Biquad
   Filter_01:
-    description: 'Filter: ON LSC Fc 320 Hz Gain -2 dB Q 0.5557'
+    description: 'Filter: ON LSC Fc 320 Hz Gain -2 dB Q 0.6'
     parameters:
       freq: 320.0
       gain: -2.0
-      q: 0.5557
+      q: 0.6
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON LSC Fc 500 Hz Gain -2 dB Q 0.8'
+    description: 'Filter: ON LSC Fc 500 Hz Gain -2 dB Q 0.9'
     parameters:
       freq: 500.0
       gain: -2.0
-      q: 0.8
+      q: 0.9
       type: Lowshelf
     type: Biquad
   Filter_03:
-    description: 'Filter: ON PK Fc 2951.41 Hz Gain -3 dB Q 1.5807'
+    description: 'Filter: ON PK Fc 3000 Hz Gain -1 dB Q 1.5807'
     parameters:
-      freq: 2951.41
-      gain: -3.0
+      freq: 3000.0
+      gain: -1.0
       q: 1.5807
       type: Peaking
     type: Biquad
   Filter_04:
-    description: 'Filter: ON HSC Fc 4000 Hz Gain -1 dB Q 2'
+    description: 'Filter: ON HSC Fc 4000 Hz Gain -0.5 dB Q 2'
     parameters:
       freq: 4000.0
-      gain: -1.0
+      gain: -0.5
       q: 2.0
       type: Highshelf
     type: Biquad
   Filter_05:
-    description: 'Filter: ON HSC Fc 5000 Hz Gain 1 dB Q 2'
+    description: 'Filter: ON HSC Fc 5000 Hz Gain 0.5 dB Q 2'
     parameters:
       freq: 5000.0
-      gain: 1.0
+      gain: 0.5
       q: 2.0
       type: Highshelf
     type: Biquad
