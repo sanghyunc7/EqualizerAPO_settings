@@ -14,12 +14,12 @@ ssh -t admin@raspberrypi.local << 'END_SCRIPT'
 
     target_dir="/home/admin/EqualizerAPO_settings"
     if [ ! -d "$target_dir" ]; then
-    echo "Directory $target_dir does not exist. Cloning..."
-    git clone https://github.com/sanghyunc7/EqualizerAPO_settings.git "$target_dir"
-    if [ $? -ne 0 ]; then
-        echo "Error: Git clone failed!"
-        exit 1
-    fi
+        echo "Directory $target_dir does not exist. Cloning..."
+        git clone https://github.com/sanghyunc7/EqualizerAPO_settings.git "$target_dir"
+        if [ $? -ne 0 ]; then
+            echo "Error: Git clone failed!"
+            exit 1
+        fi
     fi
 
     cd "$target_dir"
