@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source venv_EAPO/bin/activate
+python python translator.py he1000se.txt
 git stash
 git pull
 git stash pop
@@ -25,6 +26,7 @@ ssh -t admin@raspberrypi.local << 'END_SCRIPT'
     git stash && git stash drop
     git pull
     cp he1000se.yml /usr/share/camilladsp/configs/
+    echo "DONE"
 
     exit
     
