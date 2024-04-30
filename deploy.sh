@@ -9,7 +9,7 @@ git commit -m "push by deploy script"
 git push origin master
 
 
-ssh raspberrypi.local
+ssh admin@raspberrypi.local
 
 target_dir="/home/admin/EqualizerAPO_settings"
 if [ ! -d "$target_dir" ]; then
