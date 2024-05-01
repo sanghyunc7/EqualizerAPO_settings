@@ -68,6 +68,14 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_05:
+    description: 'Filter: ON HSC Fc 6000 Hz Gain -1 dB Q 0.9'
+    parameters:
+      freq: 6000.0
+      gain: -1.0
+      q: 0.9
+      type: Highshelf
+    type: Biquad
+  Filter_06:
     description: 'Filter: ON HSC Fc 6500 Hz Gain 2 dB Q 3'
     parameters:
       freq: 6500.0
@@ -75,7 +83,15 @@ filters:
       q: 3.0
       type: Highshelf
     type: Biquad
-  Filter_06:
+  Filter_07:
+    description: 'Filter: ON HS Fc 8000 Hz Gain 1 dB'
+    parameters:
+      freq: 8000.0
+      gain: 1.0
+      q: 0.9
+      type: Highshelf
+    type: Biquad
+  Filter_08:
     description: 'Filter: ON PK Fc 8000 Hz Gain -4 dB Q 3'
     parameters:
       freq: 8000.0
@@ -83,7 +99,7 @@ filters:
       q: 3.0
       type: Peaking
     type: Biquad
-  Filter_07:
+  Filter_09:
     description: 'Filter: ON PK Fc 10000 Hz Gain -10 dB Q 1.9'
     parameters:
       freq: 10000.0
@@ -91,7 +107,7 @@ filters:
       q: 1.9
       type: Peaking
     type: Biquad
-  Filter_08:
+  Filter_10:
     description: 'Filter: ON PK Fc 12000 Hz Gain -4 dB Q 1.8'
     parameters:
       freq: 12000.0
@@ -99,7 +115,7 @@ filters:
       q: 1.8
       type: Peaking
     type: Biquad
-  Filter_09:
+  Filter_11:
     description: 'Filter: ON PK Fc 15000 Hz Gain -9 dB Q 1.3087'
     parameters:
       freq: 15000.0
@@ -107,7 +123,7 @@ filters:
       q: 1.3087
       type: Peaking
     type: Biquad
-  Preamp_10:
+  Preamp_12:
     description: 'Preamp: -1.5 dB'
     parameters:
       gain: -1.5
@@ -154,7 +170,9 @@ pipeline:
   - Filter_07
   - Filter_08
   - Filter_09
-  - Preamp_10
+  - Filter_10
+  - Filter_11
+  - Preamp_12
   type: Filter
 - channel: 1
   description: Default, all channels
@@ -169,7 +187,9 @@ pipeline:
   - Filter_07
   - Filter_08
   - Filter_09
-  - Preamp_10
+  - Filter_10
+  - Filter_11
+  - Preamp_12
   type: Filter
 processors: null
 title: null
