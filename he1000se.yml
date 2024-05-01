@@ -44,10 +44,10 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON PK Fc 950 Hz Gain -2 dB Q 1.7'
+    description: 'Filter: ON PK Fc 950 Hz Gain -1 dB Q 1.7'
     parameters:
       freq: 950.0
-      gain: -2.0
+      gain: -1.0
       q: 1.7
       type: Peaking
     type: Biquad
