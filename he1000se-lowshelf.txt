@@ -1,1 +1,3 @@
+Filter: ON LSC Fc 100 Hz Gain -1.5 dB Q 0.9
 Filter: ON LSC Fc 400 Hz Gain -1 dB Q 0.9
+Filter: ON LSC Fc 1000 Hz Gain -1 dB Q 0.6
