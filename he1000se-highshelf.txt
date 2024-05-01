@@ -1,2 +1,2 @@
-Filter: ON HSC Fc 6000 Hz Gain 2 dB Q 0.9
-Filter: ON HS Fc 10000 Hz Gain 1 dB
+# Filter: ON HSC Fc 6000 Hz Gain 1 dB Q 0.9
+# Filter: ON HS Fc 10000 Hz Gain 1 dB
