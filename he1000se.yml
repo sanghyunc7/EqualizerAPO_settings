@@ -28,9 +28,9 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON LSC Fc 100 Hz Gain -1.5 dB Q 0.9'
+    description: 'Filter: ON LSC Fc 110 Hz Gain -1.5 dB Q 0.9'
     parameters:
-      freq: 100.0
+      freq: 110.0
       gain: -1.5
       q: 0.9
       type: Lowshelf
