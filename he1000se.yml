@@ -84,10 +84,10 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_07:
-    description: 'Filter: ON PK Fc 3000 Hz Gain -3 dB Q 1.4'
+    description: 'Filter: ON PK Fc 3000 Hz Gain -2 dB Q 1.4'
     parameters:
       freq: 3000.0
-      gain: -3.0
+      gain: -2.0
       q: 1.4
       type: Peaking
     type: Biquad
