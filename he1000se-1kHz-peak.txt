@@ -1,4 +1,4 @@
-Filter: ON PK Fc 900 Hz Gain 2 dB Q 1.2
+Filter: ON PK Fc 1100 Hz Gain 2 dB Q 0.8
 # Filter: ON PK Fc 1400 Hz Gain 1 dB Q 1.6
 # Filter: ON HSC Fc 1400 Hz Gain -5 dB Q 1.4
 # Filter: ON HSC Fc 2400 Hz Gain 5 dB Q 1.4
