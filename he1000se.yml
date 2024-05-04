@@ -52,11 +52,11 @@ filters:
       type: Peaking
     type: Biquad
   Filter_03:
-    description: 'Filter: ON PK Fc 2300 Hz Gain -3 dB Q 1.5'
+    description: 'Filter: ON PK Fc 2000 Hz Gain -3 dB Q 1.7'
     parameters:
-      freq: 2300.0
+      freq: 2000.0
       gain: -3.0
-      q: 1.5
+      q: 1.7
       type: Peaking
     type: Biquad
   Filter_04:
