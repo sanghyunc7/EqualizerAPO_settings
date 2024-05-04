@@ -121,7 +121,7 @@ filters:
       freq: 2500.0
       gain: 2.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_12:
     description: 'Filter: ON PK Fc 2700 Hz Gain 2 dB Q 2.2'
@@ -161,7 +161,7 @@ filters:
       freq: 4100.0
       gain: -2.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_17:
     description: 'Filter: ON HS Fc 5000 Hz Gain 8.5 dB'
@@ -169,7 +169,7 @@ filters:
       freq: 5000.0
       gain: 8.5
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_18:
     description: 'Filter: ON PK Fc 5000 Hz Gain 2.4 dB Q 1'
@@ -241,7 +241,7 @@ filters:
       freq: 8000.0
       gain: -3.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_27:
     description: 'Filter: ON PK Fc 9300 Hz Gain -13 dB Q 2.7'
@@ -281,7 +281,7 @@ filters:
       freq: 13500.0
       gain: -4.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_32:
     description: 'Filter: ON HS Fc 18000 Hz Gain -5 dB'
@@ -289,7 +289,7 @@ filters:
       freq: 18000.0
       gain: -5.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
 mixers:
   stereo:

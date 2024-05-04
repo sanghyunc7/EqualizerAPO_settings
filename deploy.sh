@@ -25,7 +25,7 @@ ssh -t admin@raspberrypi.local << 'END_SCRIPT'
     cd "$target_dir"
     git stash && git stash drop
     git pull --ff-only
-    cp he1000se.yml /usr/share/camilladsp/configs/
+    cp *.yml /usr/share/camilladsp/configs/
     echo "DONE"
 
     exit
