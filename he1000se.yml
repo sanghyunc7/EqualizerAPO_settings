@@ -84,19 +84,19 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_07:
+    description: 'Filter: ON HSC Fc 5000 Hz Gain -1 dB Q 0.9'
+    parameters:
+      freq: 5000.0
+      gain: -1.0
+      q: 0.9
+      type: Highshelf
+    type: Biquad
+  Filter_08:
     description: 'Filter: ON HSC Fc 5000 Hz Gain 2 dB Q 2'
     parameters:
       freq: 5000.0
       gain: 2.0
       q: 2.0
-      type: Highshelf
-    type: Biquad
-  Filter_08:
-    description: 'Filter: ON HSC Fc 5500 Hz Gain 2 dB Q 0.9'
-    parameters:
-      freq: 5500.0
-      gain: 2.0
-      q: 0.9
       type: Highshelf
     type: Biquad
   Filter_09:
