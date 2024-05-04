@@ -28,9 +28,9 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON PK Fc 150 Hz Gain -2 dB Q 1'
+    description: 'Filter: ON PK Fc 130 Hz Gain -2 dB Q 1'
     parameters:
-      freq: 150.0
+      freq: 130.0
       gain: -2.0
       q: 1.0
       type: Peaking
@@ -44,9 +44,9 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON PK Fc 400 Hz Gain -2 dB Q 0.7'
+    description: 'Filter: ON PK Fc 300 Hz Gain -2 dB Q 0.7'
     parameters:
-      freq: 400.0
+      freq: 300.0
       gain: -2.0
       q: 0.7
       type: Peaking
