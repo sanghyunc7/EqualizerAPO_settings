@@ -44,20 +44,20 @@ filters:
       type: Peaking
     type: Biquad
   Filter_02:
-    description: 'Filter: ON PK Fc 900 Hz Gain 3 dB Q 1.4'
-    parameters:
-      freq: 900.0
-      gain: 3.0
-      q: 1.4
-      type: Peaking
-    type: Biquad
-  Filter_03:
     description: 'Filter: ON LSC Fc 1000 Hz Gain -1 dB Q 0.6'
     parameters:
       freq: 1000.0
       gain: -1.0
       q: 0.6
       type: Lowshelf
+    type: Biquad
+  Filter_03:
+    description: 'Filter: ON PK Fc 1000 Hz Gain 3 dB Q 1.7'
+    parameters:
+      freq: 1000.0
+      gain: 3.0
+      q: 1.7
+      type: Peaking
     type: Biquad
   Filter_04:
     description: 'Filter: ON PK Fc 3000 Hz Gain -3 dB Q 1.4'
