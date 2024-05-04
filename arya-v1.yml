@@ -193,7 +193,7 @@ filters:
       freq: 5000.0
       gain: -3.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_21:
     description: 'Filter: ON HSC Fc 6000 Hz Gain 1 dB Q 0.7'
@@ -201,7 +201,7 @@ filters:
       freq: 6000.0
       gain: 1.0
       q: 0.7
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_22:
     description: 'Filter: ON PK Fc 6400 Hz Gain -1.5 dB Q 7'
@@ -225,7 +225,7 @@ filters:
       freq: 8000.0
       gain: -1.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_25:
     description: 'Filter: ON PK Fc 8000 Hz Gain -4 dB Q 5.5'
@@ -257,7 +257,7 @@ filters:
       freq: 10000.0
       gain: -2.0
       q: 0.6
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_29:
     description: 'Filter: ON PK Fc 10000 Hz Gain -5.5 dB Q 2'
@@ -273,7 +273,7 @@ filters:
       freq: 11500.0
       gain: -1.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_31:
     description: 'Filter: ON HSC Fc 12000 Hz Gain 3 dB Q 0.71'
@@ -281,7 +281,7 @@ filters:
       freq: 12000.0
       gain: 3.0
       q: 0.71
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_32:
     description: 'Filter: ON PK Fc 12500 Hz Gain -6 dB Q 6'
@@ -297,7 +297,7 @@ filters:
       freq: 13000.0
       gain: -10.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Filter_34:
     description: 'Filter: ON PK Fc 13000 Hz Gain -5 dB Q 3'
@@ -313,12 +313,12 @@ filters:
       freq: 16000.0
       gain: -1.0
       q: 0.9
-      type: Peaking
+      type: Highshelf
     type: Biquad
   Preamp_36:
     description: 'Preamp: -0.1 dB'
     parameters:
-      gain: '-0.1'
+      gain: -0.1
       scale: dB
     type: Gain
 mixers:
