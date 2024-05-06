@@ -26,6 +26,7 @@ ssh -t admin@raspberrypi.local << 'END_SCRIPT'
     git stash && git stash drop
     git pull --ff-only
     cp *.yml /usr/share/camilladsp/configs/
+    sudo systemctl restart mpd.service && mpc play
     echo "DONE"
 
     exit
