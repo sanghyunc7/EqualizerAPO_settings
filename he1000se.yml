@@ -140,11 +140,11 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_14:
-    description: 'Filter: ON LSC Fc 7000 Hz Gain -3 dB Q 0.5'
+    description: 'Filter: ON LSC Fc 7000 Hz Gain -3 dB Q 0.3'
     parameters:
       freq: 7000.0
       gain: -3.0
-      q: 0.5
+      q: 0.3
       type: Lowshelf
     type: Biquad
   Filter_15:
