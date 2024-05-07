@@ -124,9 +124,9 @@ filters:
       type: Peaking
     type: Biquad
   Preamp_12:
-    description: 'Preamp: -2 dB'
+    description: 'Preamp: -20 dB'
     parameters:
-      gain: -2.0
+      gain: -20.0
       scale: dB
     type: Gain
 mixers:
