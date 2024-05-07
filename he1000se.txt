@@ -4,6 +4,6 @@ Include: he1000se-lowshelf.txt
 Include: he1000se-200Hz-peak.txt
 # Include: he1000se-1kHz-peak.txt
 Include: he1000se-4kHz-peak.txt
-# Include: he1000se-9kHz-peak.txt
-# Include: he1000se-highshelf.txt
+Include: he1000se-9kHz-peak.txt
+Include: he1000se-highshelf.txt
 # Include: he1000se-upperbass.txt
