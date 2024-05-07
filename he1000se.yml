@@ -28,11 +28,11 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON PK Fc 80 Hz Gain -2 dB Q 0.7'
+    description: 'Filter: ON PK Fc 90 Hz Gain -2 dB Q 0.9'
     parameters:
-      freq: 80.0
+      freq: 90.0
       gain: -2.0
-      q: 0.7
+      q: 0.9
       type: Peaking
     type: Biquad
   Filter_01:
