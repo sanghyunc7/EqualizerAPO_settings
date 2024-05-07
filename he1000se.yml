@@ -44,9 +44,9 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON LSC Fc 700 Hz Gain -2 dB Q 0.9'
+    description: 'Filter: ON LSC Fc 500 Hz Gain -2 dB Q 0.9'
     parameters:
-      freq: 700.0
+      freq: 500.0
       gain: -2.0
       q: 0.9
       type: Lowshelf
