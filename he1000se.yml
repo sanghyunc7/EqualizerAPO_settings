@@ -28,9 +28,9 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON PK Fc 90 Hz Gain -2 dB Q 1.4'
+    description: 'Filter: ON PK Fc 130 Hz Gain -2 dB Q 1.4'
     parameters:
-      freq: 90.0
+      freq: 130.0
       gain: -2.0
       q: 1.4
       type: Peaking
