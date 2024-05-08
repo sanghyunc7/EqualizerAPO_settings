@@ -36,6 +36,14 @@ filters:
       type: Peaking
     type: Biquad
   Filter_01:
+    description: 'Filter: ON HSC Fc 3000 Hz Gain -5 dB Q 0.9'
+    parameters:
+      freq: 3000.0
+      gain: -5.0
+      q: 0.9
+      type: Highshelf
+    type: Biquad
+  Filter_02:
     description: 'Filter: ON PK Fc 3000 Hz Gain -2 dB Q 1.2'
     parameters:
       freq: 3000.0
@@ -43,20 +51,12 @@ filters:
       q: 1.2
       type: Peaking
     type: Biquad
-  Filter_02:
+  Filter_03:
     description: 'Filter: ON HSC Fc 4000 Hz Gain -2 dB Q 2'
     parameters:
       freq: 4000.0
       gain: -2.0
       q: 2.0
-      type: Highshelf
-    type: Biquad
-  Filter_03:
-    description: 'Filter: ON HSC Fc 5000 Hz Gain -5 dB Q 0.9'
-    parameters:
-      freq: 5000.0
-      gain: -5.0
-      q: 0.9
       type: Highshelf
     type: Biquad
   Filter_04:
