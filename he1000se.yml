@@ -60,10 +60,10 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_04:
-    description: 'Filter: ON HSC Fc 6000 Hz Gain 1 dB Q 0.9'
+    description: 'Filter: ON HSC Fc 6000 Hz Gain 0 dB Q 0.9'
     parameters:
       freq: 6000.0
-      gain: 1.0
+      gain: 0.0
       q: 0.9
       type: Highshelf
     type: Biquad
