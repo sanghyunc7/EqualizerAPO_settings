@@ -2,9 +2,6 @@
 
 # source venv_EAPO/bin/activate
 python3 translator.py he1000se.txt
-git stash
-git pull
-git stash pop
 git add -A
 git commit -m "push by deploy script"
 git push origin master
