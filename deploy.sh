@@ -9,3 +9,5 @@ if [ "$#" -gt 0 ]; then
     commit_msg="$@"
 fi
 git commit -m "$commit_msg"
+
+
