@@ -76,10 +76,10 @@ filters:
       type: Peaking
     type: Biquad
   Filter_06:
-    description: 'Filter: ON PK Fc 4500 Hz Gain -5 dB Q 2.837'
+    description: 'Filter: ON PK Fc 4500 Hz Gain -3 dB Q 2.837'
     parameters:
       freq: 4500.0
-      gain: -5.0
+      gain: -3.0
       q: 2.837
       type: Peaking
     type: Biquad
