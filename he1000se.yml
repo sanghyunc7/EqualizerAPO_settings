@@ -52,10 +52,10 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_03:
-    description: 'Filter: ON PK Fc 2000 Hz Gain 2 dB Q 1.0936'
+    description: 'Filter: ON PK Fc 2000 Hz Gain 1 dB Q 1.0936'
     parameters:
       freq: 2000.0
-      gain: 2.0
+      gain: 1.0
       q: 1.0936
       type: Peaking
     type: Biquad
@@ -68,10 +68,10 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_05:
-    description: 'Filter: ON PK Fc 3234.1 Hz Gain -4 dB Q 2.0647'
+    description: 'Filter: ON PK Fc 3234.1 Hz Gain -3 dB Q 2.0647'
     parameters:
       freq: 3234.1
-      gain: -4.0
+      gain: -3.0
       q: 2.0647
       type: Peaking
     type: Biquad
