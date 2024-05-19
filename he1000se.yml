@@ -28,10 +28,10 @@ devices:
   volume_ramp_time: 150
 filters:
   Filter_00:
-    description: 'Filter: ON LSC Fc 133.67 Hz Gain -2 dB Q 0.9'
+    description: 'Filter: ON LSC Fc 135.53 Hz Gain 2 dB Q 0.9'
     parameters:
-      freq: 133.67
-      gain: -2.0
+      freq: 135.53
+      gain: 2.0
       q: 0.9
       type: Lowshelf
     type: Biquad
@@ -52,26 +52,26 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_03:
-    description: 'Filter: ON PK Fc 3234.1 Hz Gain -5 dB Q 2'
+    description: 'Filter: ON PK Fc 3000 Hz Gain -6 dB Q 2'
     parameters:
-      freq: 3234.1
-      gain: -5.0
+      freq: 3000.0
+      gain: -6.0
       q: 2.0
       type: Peaking
     type: Biquad
   Filter_04:
-    description: 'Filter: ON PK Fc 4500 Hz Gain -3 dB Q 2.837'
+    description: 'Filter: ON PK Fc 4500 Hz Gain -4 dB Q 2.837'
     parameters:
       freq: 4500.0
-      gain: -3.0
+      gain: -4.0
       q: 2.837
       type: Peaking
     type: Biquad
   Filter_05:
-    description: 'Filter: ON PK Fc 5128.97 Hz Gain -2 dB Q 3.4265'
+    description: 'Filter: ON PK Fc 5128.97 Hz Gain -3 dB Q 3.4265'
     parameters:
       freq: 5128.97
-      gain: -2.0
+      gain: -3.0
       q: 3.4265
       type: Peaking
     type: Biquad
@@ -140,9 +140,9 @@ filters:
       type: Peaking
     type: Biquad
   Preamp_14:
-    description: 'Preamp: -1.8 dB'
+    description: 'Preamp: -2 dB'
     parameters:
-      gain: -1.8
+      gain: -2.0
       scale: dB
     type: Gain
 mixers:
