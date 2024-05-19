@@ -36,11 +36,11 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_01:
-    description: 'Filter: ON LSC Fc 1100 Hz Gain -2 dB Q 0.8'
+    description: 'Filter: ON LSC Fc 1100 Hz Gain -2 dB Q 0.9'
     parameters:
       freq: 1100.0
       gain: -2.0
-      q: 0.8
+      q: 0.9
       type: Lowshelf
     type: Biquad
   Filter_02:
