@@ -42,17 +42,15 @@ class Flat_TXT:
         return self.contents
 
 
-# def main():
-#     input_file = sys.argv[1]
-#     output_file = "flattened_" + input_file
-#     flat_contents = flatten_equalizer(input_file)
-#     print(flat_contents)
-#     flat_contents = sort_filters(flat_contents)
-#     print(flat_contents)
-#     with open(output_file, 'w') as f:
-#         for line in flat_contents:
-#             f.write(line + '\n')
+def main():
+    input_file = sys.argv[1]
+    output_file = "flattened_" + input_file
+    flat_txt = Flat_TXT(input_file).get_flat()
+    with open(output_file, 'w') as f:
+        for line in flat_txt:
+            f.write(line + '\n')
+    print("Done")
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
