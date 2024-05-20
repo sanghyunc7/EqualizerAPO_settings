@@ -52,10 +52,10 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_03:
-    description: 'Filter: ON PK Fc 3000 Hz Gain -5 dB Q 2'
+    description: 'Filter: ON PK Fc 3000 Hz Gain -6 dB Q 2'
     parameters:
       freq: 3000.0
-      gain: -5.0
+      gain: -6.0
       q: 2.0
       type: Peaking
     type: Biquad
