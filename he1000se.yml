@@ -36,22 +36,14 @@ filters:
       type: Lowshelf
     type: Biquad
   Filter_01:
-    description: 'Filter: ON LSC Fc 1000 Hz Gain -3 dB Q 0.9'
+    description: 'Filter: ON LSC Fc 1032.83 Hz Gain -3 dB Q 0.9'
     parameters:
-      freq: 1000.0
+      freq: 1032.83
       gain: -3.0
       q: 0.9
       type: Lowshelf
     type: Biquad
   Filter_02:
-    description: 'Filter: ON PK Fc 2000 Hz Gain -1 dB Q 1.0936'
-    parameters:
-      freq: 2000.0
-      gain: -1.0
-      q: 1.0936
-      type: Peaking
-    type: Biquad
-  Filter_03:
     description: 'Filter: ON LSC Fc 2018.51 Hz Gain -3 dB Q 0.9'
     parameters:
       freq: 2018.51
@@ -59,7 +51,7 @@ filters:
       q: 0.9
       type: Lowshelf
     type: Biquad
-  Filter_04:
+  Filter_03:
     description: 'Filter: ON PK Fc 3000 Hz Gain -6 dB Q 2'
     parameters:
       freq: 3000.0
@@ -67,7 +59,6 @@ filters:
       q: 2.0
       type: Peaking
     type: Biquad
-<<<<<<< HEAD
   Filter_04:
     description: 'Filter: ON HSC Fc 3707.06 Hz Gain 1 dB Q 0.9096'
     parameters:
@@ -78,25 +69,17 @@ filters:
     type: Biquad
   Filter_05:
     description: 'Filter: ON PK Fc 4500 Hz Gain -4 dB Q 2.837'
-=======
-  Filter_05:
-    description: 'Filter: ON PK Fc 4500 Hz Gain -5 dB Q 2.837'
->>>>>>> origin/master
     parameters:
       freq: 4500.0
-      gain: -5.0
+      gain: -4.0
       q: 2.837
       type: Peaking
     type: Biquad
   Filter_06:
-<<<<<<< HEAD
     description: 'Filter: ON PK Fc 5128.97 Hz Gain -3 dB Q 3.4265'
-=======
-    description: 'Filter: ON PK Fc 5128.97 Hz Gain -4 dB Q 3.4265'
->>>>>>> origin/master
     parameters:
       freq: 5128.97
-      gain: -4.0
+      gain: -3.0
       q: 3.4265
       type: Peaking
     type: Biquad
@@ -109,26 +92,18 @@ filters:
       type: Highshelf
     type: Biquad
   Filter_08:
-<<<<<<< HEAD
     description: 'Filter: ON HSC Fc 5970.77 Hz Gain 5.3 dB Q 1.2441'
-=======
-    description: 'Filter: ON HSC Fc 5970.77 Hz Gain 4 dB Q 1.2441'
->>>>>>> origin/master
     parameters:
       freq: 5970.77
-      gain: 4.0
+      gain: 5.3
       q: 1.2441
       type: Highshelf
     type: Biquad
   Filter_09:
-<<<<<<< HEAD
     description: 'Filter: ON HSC Fc 8000 Hz Gain -1 dB Q 0.9'
-=======
-    description: 'Filter: ON HSC Fc 8000 Hz Gain -3 dB Q 0.9'
->>>>>>> origin/master
     parameters:
       freq: 8000.0
-      gain: -3.0
+      gain: -1.0
       q: 0.9
       type: Highshelf
     type: Biquad
@@ -157,11 +132,7 @@ filters:
       type: Peaking
     type: Biquad
   Filter_13:
-<<<<<<< HEAD
     description: 'Filter: ON HSC Fc 13964.6 Hz Gain 1 dB Q 0.9'
-=======
-    description: 'Filter: ON HSC Fc 13964.6 Hz Gain 2 dB Q 0.9'
->>>>>>> origin/master
     parameters:
       freq: 13964.6
       gain: 1.0
@@ -177,11 +148,7 @@ filters:
       type: Peaking
     type: Biquad
   Preamp_15:
-<<<<<<< HEAD
     description: 'Preamp: -2.2 dB'
-=======
-    description: 'Preamp: -2 dB'
->>>>>>> origin/master
     parameters:
       gain: -2.2
       scale: dB
