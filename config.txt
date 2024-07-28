@@ -1,5 +1,5 @@
 # Preamp: -20 dB
-Preamp: -1.5 dB
+# Preamp: -1.5 dB
 # Preamp: -16.5 dB
 # Preamp: 2.7 dB
 Include: he1000se.txt
