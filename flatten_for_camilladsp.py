@@ -44,12 +44,20 @@ class Flat_TXT:
 
 def main():
     input_file = sys.argv[1]
-    output_file = "flattened_" + input_file
+    output_file = "flattened_"
+
+    # assign tags like "test" or "classical" or "edm"
+    if len(sys.argv) >= 3:
+        output_file += str(sys.argv[2]) + '_'
+    output_file += input_file
+    
     flat_txt = Flat_TXT(input_file).get_flat()
+    lines = 0
     with open(output_file, 'w') as f:
         for line in flat_txt:
             f.write(line + '\n')
-    print("Done")
+            lines += 1
+    print(f"{lines} parameters generated to {output_file}")
 
 
 if __name__ == "__main__":
