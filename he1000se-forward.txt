@@ -1,0 +1,4 @@
+# Filter: ON PK Fc 5300 Hz Gain 1 dB Q 3.4265
+Filter: ON PK Fc 2000 Hz Gain 1.5 dB Q 1.1242
+Filter: ON PK Fc 1200 Hz Gain 1 dB Q 2.4709
+# Filter: ON HSC Fc 16482.8 Hz Gain 2.5 dB Q 0.9
