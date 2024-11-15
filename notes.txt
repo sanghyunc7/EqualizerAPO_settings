@@ -1,0 +1,4 @@
+Observation:
+Better imaging on the HEKSE can be observed if the ZMF headband is omitted.
+
+
