@@ -1,9 +1,9 @@
 # Preamp: -20 dB
-# Preamp: -1.5 dB
-# Preamp: -16.5 dB
-# Preamp: 2.7 dB
+# Preamp: 1.4 dB
+# Preamp: -4.5 dB
+# Preamp: -2.2 dB
 # Include: he1000se.txt
 # Include: arya-v1.txt
 # Include: ether-cx.txt
-# Include: fostex-T50RP.txt
+Include: fostex-T50RP.txt
 # Include: flattened_he1000se.txt
