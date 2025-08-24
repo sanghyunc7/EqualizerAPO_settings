@@ -2,6 +2,6 @@
 # Preamp: 1.4 dB
 # Preamp: -4.5 dB
 # Preamp: -2.2 dB
-# Include: denafrips_aresii_burson_soloist_3XP\he1000se\he1000se.txt
+Include: denafrips_aresii_burson_soloist_3XP\he1000se\he1000se.txt
 # Include: denafrips_aresii_burson_soloist_3XP\fostex-T50RP-MK3\fostex-T50RP.txt
 # Include: flattened_he1000se.txt
