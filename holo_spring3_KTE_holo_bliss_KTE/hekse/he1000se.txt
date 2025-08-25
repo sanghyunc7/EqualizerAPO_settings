@@ -2,3 +2,4 @@ Include: hekse-harman-target.txt
 Preamp: -4 dB
 Include: hekse-10khz-peak.txt
 Include: hekse-bass.txt
+Include: hekse-6khz.txt
